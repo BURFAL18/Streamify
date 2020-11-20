@@ -7,6 +7,6 @@ import streamReducer from './streamReducer';
      {
          auth:authReducer,
          form: formReducer,
-         streams: streamReducer
+         streams: streamReducer,
      }
  );

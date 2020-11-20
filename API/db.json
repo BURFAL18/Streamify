@@ -1,24 +1,24 @@
 {
   "streams": [
     {
-      "title": "Mystream",
+      "title": "Default Mystream",
       "description": "infoo",
       "id": 1
     },
     {
-      "title": "Random stream",
+      "title": "Default Mystream 2",
       "description": "hello",
       "id": 2
     },
     {
-      "title": "Stream edit",
-      "description": "Test with uid",
+      "title": "StreamCheck",
+      "description": "check1",
       "UID": "102635504799669572526",
       "id": 3
     },
     {
-      "title": "test2",
-      "description": "saffs",
+      "title": "Streamtest2",
+      "description": "sample ",
       "UID": "102635504799669572526",
       "id": 4
     }

@@ -1,5 +1,8 @@
 import React from "react";
+
 import {connect} from 'react-redux';
+import {Link} from 'react-router-dom';
+
 import {fetchStreams} from '../../actions';
 
 
@@ -17,9 +20,9 @@ renderDelEdit(stream)
         return(
             <div className="right floated content">
                
-               <button className=" ui button primary">
-                    Edit
-                </button>
+              
+                  <Link to={`/streams/edit/${stream.id}`} className="ui button primary">  Edit </Link>
+               
                 
                 <button className=" ui button negative">
                     Delete
@@ -39,6 +42,7 @@ renderList()
 
                 <div className="item" key={stream.id}>
                {this.renderDelEdit(stream)}
+              
                     <i className ="large middle aligned icon camera" />
                     <div className="content">
                         {stream.title}
@@ -51,7 +55,20 @@ renderList()
             );
         });
   }
+renderCreate()
+{
+    if(this.props.isSignedIn)
 
+    {
+    return(
+<div style={{textAlign: 'right'}}>
+    <Link to="/streams/new" className="ui button primary">
+         Create Stream
+    </Link>
+</div>
+        );
+    }
+}
 render()
 {
    return (
@@ -59,6 +76,7 @@ render()
         <h2>Streams</h2>
     <div className ="ui celled list">
         {this.renderList()}</div>
+         {this.renderCreate()}
     </div>
        );
   }
@@ -67,7 +85,8 @@ render()
 const mapStateToProps =(state) =>
 {
     return { streams: Object.values(state.streams),
-            currentUserId: state.auth.UID
+            currentUserId: state.auth.UID,
+            isSignedIn: state.auth.isSignedIn 
            };
 
 }
