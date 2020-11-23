@@ -12,6 +12,7 @@ class StreamForm extends Component {
       );
     }
   };
+
   renderInput = ({ input, label, meta }) => {
     const className = `field ${meta.error && meta.touched ? "error" : ""}`;
     return (
@@ -22,6 +23,7 @@ class StreamForm extends Component {
       </div>
     );
   };
+  
   onSubmit = (formValues) => {
     this.props.onSubmit(formValues);
   };
