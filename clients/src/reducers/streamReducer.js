@@ -8,8 +8,8 @@ import {
 
 import _ from "lodash";
 const INITIAL_STATE = {};
-
-export default (state = INITIAL_STATE, action) => {
+// eslint-disable-next-line
+export default (state = INITIAL_STATE, action) => { 
   switch (action.type) {
     case CREATE_STREAM:
       return { ...state, [action.payload.id]: action.payload };
