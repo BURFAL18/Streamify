@@ -6,15 +6,16 @@ class StreamShow extends React.Component{
 componentDidMount()
 {
     this.props.fetchStream(this.props.match.params.id);
-
 }
 
 render()
 {
-if(!this.props.stream)
+
+ if(!this.props.stream)
 {
     return <div>Loading....</div>;
 }
+
 const {title ,description} =this.props.stream;
 
 return (
