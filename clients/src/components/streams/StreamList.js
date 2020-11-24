@@ -10,7 +10,7 @@ class StreamList extends Component {
   renderAdmin = (stream) => {
     if (this.props.currentUID === stream.UID) {
       return (
-        <div className="right floated content">
+        <div className="ui right floated content">
           <Link to={`/streams/edit/${stream.id}`} className="ui button primary">
             Edit
           </Link>
@@ -40,7 +40,7 @@ class StreamList extends Component {
       return (
         <div className="item" key={stream.id}>
           {this.renderAdmin(stream)}
-          <i className="large middle aligned icon camera" />
+          <i className="large middle aligned icon video" />
           <div className="content">
             <Link to={`/streams/${stream.id}`} className="header">
               {stream.title}

@@ -12,6 +12,7 @@ class StreamDelete extends Component {
   handleDelete = () => {
     this.props.deleteStream(this.props.match.params.id);
   };
+  
   renderActions = () => {
     return (
       <Fragment>
@@ -26,9 +27,9 @@ class StreamDelete extends Component {
   };
   renderContent = () => {
     if (this.props.stream.title === undefined) {
-      return "Are you sure you want to delete this stream?";
+      return "Are you sure you want to Delete this Stream?";
     }
-    return `Are you sure you want to delete the stream with title: ${this.props.stream.title}`;
+    return `Are you sure you want to Delete the stream with Title: ${this.props.stream.title}`;
   };
   render() {
     return (

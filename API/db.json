@@ -1,32 +1,21 @@
 {
   "streams": [
     {
-      "title": "Default Mystream",
-      "description": "infoo",
+      "title": "Default Stream",
+      "description": "Welcome to Streamify",
       "id": 1
-    },
-    {
-      "title": "Default Mystream 2",
-      "description": "hello",
-      "id": 2
     },
     {
       "title": "Stream check ",
       "description": "Stream Check 1",
       "UID": "102635504799669572526",
+      "id": 2
+    },
+    {
+      "title": "My Hero Academia",
+      "description": "united states of Smashhh",
+      "UID": "102635504799669572526",
       "id": 3
-    },
-    {
-      "title": "Streamtest2",
-      "description": "sample ",
-      "UID": "102635504799669572526",
-      "id": 4
-    },
-    {
-      "title": "stream create 2",
-      "description": "stream 2",
-      "UID": "102635504799669572526",
-      "id": 5
     }
   ]
 }
